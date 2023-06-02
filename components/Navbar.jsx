@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { HiOutlineMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/Hi";
 
 const Navbar = () => {
   const router = useRouter();
@@ -76,8 +75,6 @@ const Navbar = () => {
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
-
-                {/* <HiOutlineMenuAlt2 size={30} /> */}
               </div>
             ) : (
               <div>
@@ -95,8 +92,6 @@ const Navbar = () => {
                     d="M3.75 9h16.5m-16.5 6.75h16.5"
                   />
                 </svg>
-
-                {/* <HiOutlineMenuAlt1 size={30} /> */}
               </div>
             )}
           </div>
