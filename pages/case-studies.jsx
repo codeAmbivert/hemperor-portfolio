@@ -7,7 +7,7 @@ const caseStudies = () => {
   return (
     <Layout>
       <div className="mt-20 mb-16 w-[90vw]">
-        <h1 className="tex-3xl my-7 text-center">
+        <h1 className="text-xl md:text-3xl lg:text-4xl  my-7 text-center">
           “If you think good design is expensive you should look at the cost of
           bad design.”
         </h1>
