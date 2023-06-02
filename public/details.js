@@ -111,7 +111,7 @@ export const caseStudiesDetails = [
       "A project management software that allows users organize, plan, track, collaborate and manage your projects effortlessly.",
   },
   {
-    src: "/schoolify 2.png",
+    src: "/Schoolify 2.png",
     caseStudyName: "schoolify",
     aboutCaseStudy:
       "Hero section of an Ed-tech platform that enables users to search for neighboring schools around them based on their choice of preference.",
