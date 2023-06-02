@@ -6,14 +6,13 @@ import { HiOutlineMenuAlt2, HiOutlineMenuAlt1 } from "react-icons/Hi";
 const Navbar = () => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
-  console.log(router.asPath);
 
   const handleDropDown = () => {
     setNav(!nav);
   };
 
   return (
-    <nav className="w-full fixed bg-black/80 py-5 z-50">
+    <nav className="w-full fixed bg-black/80 py-6 z-50">
       <div className="w-[90vw] mx-auto">
         <div className="flex justify-between">
           <h1 className="text-2xl">DesignHemperor</h1>
@@ -62,45 +61,83 @@ const Navbar = () => {
             className="md:hidden z-50"
           >
             {!nav ? (
-              <HiOutlineMenuAlt2 size={30} />
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+
+                {/* <HiOutlineMenuAlt2 size={30} /> */}
+              </div>
             ) : (
-              <HiOutlineMenuAlt1 size={30} />
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 9h16.5m-16.5 6.75h16.5"
+                  />
+                </svg>
+
+                {/* <HiOutlineMenuAlt1 size={30} /> */}
+              </div>
             )}
           </div>
         </div>
         <ul
           className={
             nav
-              ? "flex flex-col opacity-75 text-3xl font-normal w-full h-full items-center justify-around bg-black fixed top-0 left-0"
-              : "flex z-30 flex-col opacity-75 text-3xl font-normal w-full h-full items-center justify-around bg-black fixed left-[-200vw]"
+              ? "text-black flex flex-col text-xl font-normal h-[50%] w-[70vw] md:w-[30vw] p-5 items-center justify-around bg-white fixed top-20 rounded left-0"
+              : "flex z-50 flex-col text-3xl font-normal w-full h-full items-center justify-around bg-black fixed left-[-200vw]"
           }
         >
-          <li className="mr-5">
+          <li className="md:mr-5">
             <Link
               href="/"
-              className={router.pathname === "/" ? "active" : ""}
+              className={
+                router.pathname === "/" ? "border-b-2 border-b-black" : ""
+              }
               onClick={() => handleDropDown()}
             >
               HOME
             </Link>
           </li>
-          <li className="mr-5">
+          <li className="md:mr-5">
             <Link
               href="/about"
-              className={router.pathname === "/about" ? "active" : ""}
+              className={
+                router.pathname === "/about" ? "border-b-2 border-b-black" : ""
+              }
               onClick={() => handleDropDown()}
             >
               ABOUT
             </Link>
           </li>
-          <li className="mr-5">
+          <li className="md:mr-5">
             <a
               href="#connect"
               className={
                 router.pathname === "/#connect" ||
                 router.pathname === "/about#connect" ||
                 router.pathname === "/case-studies#connect"
-                  ? "active"
+                  ? "border-b-2 border-b-black"
                   : ""
               }
               onClick={() => handleDropDown()}
@@ -111,7 +148,11 @@ const Navbar = () => {
           <li>
             <Link
               href="/case-studies"
-              className={router.pathname === "/case-studies" ? "active" : ""}
+              className={
+                router.pathname === "/case-studies"
+                  ? "border-b-2 border-b-black"
+                  : ""
+              }
               onClick={() => handleDropDown()}
             >
               CASE STUDIES
