@@ -47,13 +47,7 @@ export default function Home() {
 
         <div className="flex justify-center items-center flex-col my-10 p-1 md:flex-row">
           <div className="w-full md:w-5/12">
-            <video
-              className="h-full w-full"
-              src="/Charles' designs.mp4"
-              muted
-              autoPlay
-              loop
-            />
+            <img className="h-full w-full" src="/gif vid.gif" />
           </div>
           <div className="md:flex md:flex-col md:justify-center md:w-6/12 md:mx-auto">
             <h1 className="justify-sel text-4xl md:text-5xl my-4 leading-tight">
