@@ -32,3 +32,35 @@ body {
 .hover:hover:before {
   opacity: 1;
 }
+
+.spiral-div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#first {
+  border: 2px dashed #50dfb4;
+  animation: spiral 30s infinite linear;
+}
+#second {
+  border: 2px dashed #8338ea;
+  animation: spiral2 30s infinite linear;
+}
+
+@keyframes spiral {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    border-width: 2px;
+    /* border-width: 20px; */
+  }
+}
+@keyframes spiral2 {
+  0% {
+    border-width: 2px;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

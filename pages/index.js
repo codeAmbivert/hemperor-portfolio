@@ -81,7 +81,7 @@ export default function Home() {
           <h1 className="uppercase text-4xl font-bold mb-6 lg:text-5xl">
             Projects
           </h1>
-          <div className="overflow-x-scroll">
+          <div className="overflow-x-scroll z-10">
             <div className="flex w-fit">
               {projectDetails.map((eachProject, index) => {
                 return (

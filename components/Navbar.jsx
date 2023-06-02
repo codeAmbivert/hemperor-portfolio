@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full fixed bg-black/80 py-6 z-50">
+    <nav className="w-full fixed bg-black/80 py-6 z-[50]">
       <div className="w-[90vw] mx-auto">
         <div className="flex justify-between">
           <h1 className="text-2xl">DesignHemperor</h1>

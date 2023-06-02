@@ -1,6 +1,6 @@
 const SkillsCard = ({ src, skillName, aboutSkill }) => {
   return (
-    <div className="bg-[#101010] w-60 h-60 lg:h-72 lg:w-72 p-5 mr-5 rounded-sm border-b border-b-[#8338EA]">
+    <div className="bg-[#101010] w-60 h-60 lg:h-72 lg:w-72 p-5 mr-5 rounded-sm border-b border-b-[#8338EA] z-20">
       <div className="">
         <img src={src} className="" alt="project image" />
       </div>

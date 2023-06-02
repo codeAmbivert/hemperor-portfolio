@@ -1,12 +1,14 @@
 const projectCard = ({ src, projectName, aboutProject }) => {
   return (
-    <div className="bg-gray-600 hover:bg-gradient-to-b from-[#8338EA] to-[#50DFB4] p-[0.1rem] w-64 lg:w-[19rem] lg:h-[19rem] mr-5 ">
+    <div className="z-20 bg-gray-600 hover:bg-gradient-to-b from-[#8338EA] to-[#50DFB4] p-[0.1rem] w-64 lg:w-[19rem] lg:h-[19rem] mr-5 ">
       <div className="bg-black h-full w-full p-5">
         <div className="h-10 w-10">
           <img src={src} className="h-full w-full" alt="project card image" />
         </div>
         <h2 className="uppercase my-4 lg:text-xl">{projectName}</h2>
-        <div className="text-xs lg:text-sm text-gray-500 mb-3  lg:mb-5">{aboutProject}</div>
+        <div className="text-xs lg:text-sm text-gray-500 mb-3  lg:mb-5">
+          {aboutProject}
+        </div>
         <div className="flex hover:text-gradient-to-b from-[#8338EA] to-[#50DFB4]">
           Check it out{" "}
           <span>
